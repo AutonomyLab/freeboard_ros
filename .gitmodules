@@ -1,0 +1,3 @@
+[submodule "freeboard"]
+	path = freeboard
+	url = https://github.com/AutonomyLab/freeboard.git
