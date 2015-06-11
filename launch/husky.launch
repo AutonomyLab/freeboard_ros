@@ -1,0 +1,8 @@
+<launch>
+    <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch"/>
+    <node pkg="freeboard_ros" name="freeboard_ros" type="freeboard_ros.py" output="screen">
+        <param name="~host" value="192.168.1.52"/>
+        <param name="~port" value="3274"/>
+        <param name="~debug" value="True"/>
+    </node>
+</launch>

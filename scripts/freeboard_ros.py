@@ -2,7 +2,7 @@
 
 from bottle import route, run, static_file
 import os
-
+import rospy
 
 @route('/freeboard/<filename:path>')
 def send_static(filename):
@@ -18,9 +18,11 @@ def freeboard():
 
 
 def main():
-    port = 3274
-    debug = True
-    host = 'localhost'
+    rospy.init_node("freeboard_ros_node")
+
+    port = int(rospy.get_param("~port", 3274))
+    debug = rospy.get_param("~debug", False)
+    host = rospy.get_param("~host", "localhost")
 
     run(host=host, port=port, debug=debug)
 
