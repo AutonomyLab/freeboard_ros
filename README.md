@@ -6,7 +6,13 @@
 
 - Create a `roslibjs` plugin for `freeboard`: [Our local fork](https://github.com/AutonomyLab/freeboard.git) of `freeboad` includes a proof-of-concept [plugin](https://github.com/AutonomyLab/freeboard/blob/ros-dev/plugins/ros/ros.js) for `freeboard` that enables `freeboard` to connect to a local [rosbridge server](http://wiki.ros.org/rosbridge_server) and expose any ROS topic as a *data source* in `freeboard`. Development is done in `ros-dev` branch. This fork is embedded in this git repository as a git submodule.
 
-- Serve freeboard dashboard using a standalone ROS Node: `scripts/freeboard_ros.py` is a standalone ROS node that serves `freeboard` as a web application using [Bottle](http://bottlepy.org/docs/dev/index.html).
+- Serve `freeboard` dashboard using a standalone ROS Node: `scripts/freeboard_ros.py` is a standalone ROS node that serves `freeboard` as a web application using [Bottle](http://bottlepy.org/docs/dev/index.html).
+
+- Load all javascript dependencies locally (Not Started)
+
+- Port [Robot Web Tools](http://robotwebtools.org/tools.html#widgets) widgets to `freeboard` (Not Started)
+
+- Make communication between ROS and `freeboard` two way (Not Started)
 
 ## Download and Compile Instructions
 
